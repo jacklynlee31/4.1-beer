@@ -1858,6 +1858,12 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.views {
+  color: #2E91CE;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  text-align: right; }
+
 .beers {
   max-width: 1160px;
   margin-left: auto;
@@ -1868,6 +1874,13 @@ html {
     clear: both;
     content: "";
     display: table; }
+
+.temp {
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+  padding: 1em;
+  line-height: 2em; }
 
 .name {
   color: #2E91CE;
@@ -1888,7 +1901,6 @@ html {
   white-space: nowrap; }
 
 .cart {
-  display: block;
   font-size: .9em;
   color: white;
   background-color: #2E91CE;
