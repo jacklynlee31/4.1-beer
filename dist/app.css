@@ -1859,10 +1859,12 @@ html {
   box-sizing: inherit; }
 
 .views {
-  color: #2E91CE;
   font-size: 1.5em;
   padding-bottom: 1em;
   text-align: right; }
+
+.views a {
+  color: #2E91CE; }
 
 .beers {
   max-width: 1160px;
@@ -1902,7 +1904,6 @@ html {
 
 .cart {
   font-size: .9em;
-  color: white;
   background-color: #2E91CE;
   border: 1px solid #2E91CE;
   border-radius: 1px;
@@ -1910,3 +1911,7 @@ html {
 
 [class*="fa"] {
   padding-right: .5em; }
+
+.cart a {
+  color: white;
+  text-decoration: none; }
