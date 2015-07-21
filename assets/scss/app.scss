@@ -21,10 +21,12 @@ html {
   box-sizing: inherit;
 }
 .views {
-	color: $blue;
 	font-size: 1.5em;
 	padding-bottom: 1em;
 	text-align: right;
+}
+.views a {
+	color: $blue;
 }
 .beers {
 	@include outer-container(1160px);
@@ -58,7 +60,6 @@ html {
 }
 .cart {
 	font-size: .9em;
-	color: white;
 	background-color: $blue;
 	border: 1px solid $blue;
 	border-radius: 1px;
@@ -66,4 +67,16 @@ html {
 }
 [class*="fa"] {
 	padding-right: .5em;
+}
+.cart a {
+	color: white;
+	text-decoration: none;
+}
+.grid {
+	.name {
+		color: red;
+	}
+}
+.list {
+	// sh*t goes here
 }

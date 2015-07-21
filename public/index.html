@@ -10,8 +10,8 @@
 </head>
 <body>
 <div class="views">
-	<i class="fa fa-th"></i>
-	<i class="fa fa-th-list"></i>
+	<a href="#"><span class="grid"><i class="fa fa-th"></i></span></a>
+	<a href="#"><span class="list"><i class="fa fa-th-list"></i></span></a>
 </div>
 <div class="beers"></div>
 	<template id="main-template">
@@ -20,7 +20,7 @@
 			<span class="name">{{ name }}</span>
 			<span class="abv">${{ abv }}</span>
 			<span class="desc">{{ description }}</span>
-				<button class="cart"><i class="fa fa-plus-circle"></i>Add to cart</button>
+			<button class="cart"><a href="#"><i class="fa fa-plus-circle"></i>Add to cart</a></button>
 		</div>
 	</template>
 
