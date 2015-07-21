@@ -1,21 +1,12 @@
-var templateString = document.querySelector('main-template').innerHTML;
+(function() {
+  var beersEl = document.querySelector('.beers');
+  var templateString = document.querySelector('#main-template').innerHTML;
 
-var temp = Handlebars.compile(templateString);
-var output = template('beer');
+  var t = Handlebars.compile(templateString);
+  var result = '';
 
-// (function() {
-
-// // var contentEl = document.querySelector('.content');
-
-// 	function registerByQuery(querySelector) {
-// 	  var templateString = document.querySelector(querySelector).innerHTML;
-// 	  templateString = templateString.replace('&gt;', '>');
-
-// 	  return Handlebars.compile(templateString);
-// 	}
-
-// 	#main-template = registerByQuery(querySelector) {
-// 		var templateString = document.
-// 	}
-
-// })();
+  beerData.data.forEach(function(beer) {
+    result += t(beer);
+    beersEl.innerHTML = result;
+  });
+})();

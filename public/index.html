@@ -8,19 +8,24 @@
     <title>Beer</title>
 </head>
 <body>
-<<<<<<< Updated upstream
-<!-- change -->
-=======
+<div class="beers"></div>
 
+<template id="main-template">
+	<span>{{ name }}</span>
+	<img src="https://raw.githubusercontent.com/TIY-LR-FEE-2015-June/assignments/master/2.1-beer-layout/bottle-1.png" alt="beer-image">
+	<span>{{ description }}</span>
+	<button>Add to cart</button>
+</template>
+
+<!-- <div class="beer-list">
 <template id="main-template">
 	<img src="{{ article-image }}" alt="beer">
 	<div class="article-name">{{ article-name }}</div>
 </template>
-
->>>>>>> Stashed changes
+</div> -->
 <script src="jquery/dist/jquery.min.js"></script>
-<script src="handlebars/handlebars.js"></script>
 <script src="beer-data.js"></script>
+<script src="handlebars/handlebars.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
