@@ -5,14 +5,53 @@ $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import 'bourbon';
 @import 'neat';
 
+$blue: #2E91CE;
+$gray: #C3C3C3;
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-// Your SASS Journey Starts Here
-
-//change
+.beers {
+	@include outer-container(1160px);
+	border: 2px solid $blue;
+	padding: 3em;
+}
+.name {
+	color: $blue;
+	font-size: 1.5em;
+	font-weight: bold;
+	display: block;
+}
+.abv {
+	color: $gray;
+	font-size: 1.5em;
+	display: block;
+}
+.desc {
+	color: $blue;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.cart {
+	display: block;
+	font-size: .9em;
+	color: white;
+	background-color: $blue;
+	border: 1px solid $blue;
+	border-radius: 1px;
+	padding: .5em;
+}
+[class*="fa"] {
+	padding-right: .5em;
+}

@@ -4,25 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="app.css">
     <title>Beer</title>
 </head>
 <body>
 <div class="beers"></div>
-
 <template id="main-template">
-	<span>{{ name }}</span>
 	<img src="https://raw.githubusercontent.com/TIY-LR-FEE-2015-June/assignments/master/2.1-beer-layout/bottle-1.png" alt="beer-image">
-	<span>{{ description }}</span>
-	<button>Add to cart</button>
+	<span class="name">{{ name }}</span>
+	<span class="abv">${{ abv }}</span>
+	<span class="desc">{{ description }}</span>
+	<button class="cart"><i class="fa fa-plus-circle"></i>Add to cart</button>
 </template>
 
-<!-- <div class="beer-list">
-<template id="main-template">
-	<img src="{{ article-image }}" alt="beer">
-	<div class="article-name">{{ article-name }}</div>
-</template>
-</div> -->
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="beer-data.js"></script>
 <script src="handlebars/handlebars.js"></script>
