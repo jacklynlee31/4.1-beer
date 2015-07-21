@@ -9,14 +9,20 @@
     <title>Beer</title>
 </head>
 <body>
+<div class="views">
+	<i class="fa fa-th"></i>
+	<i class="fa fa-th-list"></i>
+</div>
 <div class="beers"></div>
-<template id="main-template">
-	<img src="https://raw.githubusercontent.com/TIY-LR-FEE-2015-June/assignments/master/2.1-beer-layout/bottle-1.png" alt="beer-image">
-	<span class="name">{{ name }}</span>
-	<span class="abv">${{ abv }}</span>
-	<span class="desc">{{ description }}</span>
-	<button class="cart"><i class="fa fa-plus-circle"></i>Add to cart</button>
-</template>
+	<template id="main-template">
+		<div class="temp">
+			<img src="https://raw.githubusercontent.com/TIY-LR-FEE-2015-June/assignments/master/2.1-beer-layout/bottle-1.png" alt="beer-image">
+			<span class="name">{{ name }}</span>
+			<span class="abv">${{ abv }}</span>
+			<span class="desc">{{ description }}</span>
+				<button class="cart"><i class="fa fa-plus-circle"></i>Add to cart</button>
+		</div>
+	</template>
 
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="beer-data.js"></script>
