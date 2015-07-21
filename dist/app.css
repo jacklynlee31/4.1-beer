@@ -1915,3 +1915,6 @@ html {
 .cart a {
   color: white;
   text-decoration: none; }
+
+.grid .name {
+  color: red; }
