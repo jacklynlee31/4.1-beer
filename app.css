@@ -1916,5 +1916,71 @@ html {
   color: white;
   text-decoration: none; }
 
+.grid .temp {
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+  padding: 1em;
+  line-height: 2em; }
+
 .grid .name {
-  color: red; }
+  display: block; }
+
+.grid .abv {
+  display: block; }
+
+.grid .desc {
+  display: block; }
+
+.list .temp {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .list .temp:last-child {
+    margin-right: 0; }
+
+.list .temp img {
+  display: inline;
+  float: left;
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 15.3188%; }
+  .list .temp img:last-child {
+    margin-right: 0; }
+
+.list .name {
+  color: #2E91CE;
+  font-size: 1em;
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 15.3188%; }
+  .list .name:last-child {
+    margin-right: 0; }
+
+.list .abv {
+  font-size: 1em;
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 15.3188%; }
+  .list .abv:last-child {
+    margin-right: 0; }
+
+.list .desc {
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 15.3188%; }
+  .list .desc:last-child {
+    margin-right: 0; }
+
+.list .cart {
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 15.3188%; }
+  .list .cart:last-child {
+    margin-right: 0; }
