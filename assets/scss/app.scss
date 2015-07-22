@@ -73,10 +73,46 @@ html {
 	text-decoration: none;
 }
 .grid {
+	.temp {
+		text-align: center;
+		display: inline-block;
+		width: 33%;
+		padding: 1em;
+		line-height: 2em;
+	}
 	.name {
-		color: red;
+		display: block;
+	}
+	.abv {
+		display: block;
+	}
+	.desc {
+		display: block;
 	}
 }
 .list {
-	// sh*t goes here
+	.temp {
+		@include span-columns(12);
+	}
+
+	.temp img {
+		display: inline;
+		float: left;
+		@include span-columns(1 of 5);
+	}
+	.name {
+		color: $blue;
+		font-size: 1em;
+		@include span-columns(1 of 5);
+	}
+	.abv {
+		font-size: 1em;
+		@include span-columns(1 of 5);
+	}
+	.desc {
+		@include span-columns(1 of 5);
+	}
+	.cart {
+		@include span-columns(1 of 5);
+	}
 }
